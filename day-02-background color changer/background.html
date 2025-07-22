@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Day 2: Background Color Changer -->
+ <h2>Day 2</h2>
+ <h3>Background color changer</h3>
+ <p>This is the second day of the 92days Javascript challenge</p>
+<p>In this mini-project, I am creating a button that changes the background color of the page when clicked.</p>
+<button onclick="backgroundChanger()">Change the background</button>
+    <script>
+      // background-color changer button
+function backgroundChanger() {
+    const colors = ["red", "blue", "yellow", "purple", "green", "brown"];
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    document.body.style.backgroundColor = colors[randomIndex];
+}
+    </script>
+</body>
+</html>
